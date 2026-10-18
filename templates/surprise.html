@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/surprise.css') }}">
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- Birthday Background -->
+<!-- ========================= -->
+
+<div id="birthdayBackground"></div>
+
+<!-- ========================= -->
+<!-- Story -->
+<!-- ========================= -->
+
+<div id="story">
+    <h2 id="line"></h2>
+</div>
+
+<!-- ========================= -->
+<!-- Gift -->
+<!-- ========================= -->
+
+<img
+    id="gift"
+    src="{{ url_for('static', filename='images/gift.png') }}"
+    alt="Gift Box"
+>
+
+<!-- ========================= -->
+<!-- Love Letter -->
+<!-- ========================= -->
+
+<div id="letter">
+
+    <div class="letter-header">💌</div>
+
+    <h1>My Dearest Love,</h1>
+
+    <p>
+        Happy 21st Birthday, my love. ❤️
+        <br><br>
+
+        Thank you for making every day brighter with your smile.
+        Every moment with you has become one of my favorite memories.
+        <br><br>
+
+        I hope today brings you as much happiness as you've brought into my life.
+        <br><br>
+
+        No matter what happens...
+        I will always be by your side.
+        <br><br>
+
+        I love you more than words can ever express.
+        <br><br>
+
+        Forever Yours ❤️
+    </p>
+
+    <!-- New Reveal Button Added Here -->
+    <button id="revealCake">My Love, Reveal Your Surprise ❤️</button>
+
+</div>
+
+<!-- ========================= -->
+<!-- Cake -->
+<!-- ========================= -->
+
+<img
+    id="cake"
+    src="{{ url_for('static', filename='images/cake.png') }}"
+    alt="Birthday Cake"
+>
+
+<!-- ========================= -->
+<!-- Music -->
+<!-- ========================= -->
+
+<audio id="bgMusic" autoplay loop>
+    <source src="{{ url_for('static', filename='music/birthday_CfGcRpGg.mp3') }}" type="audio/mpeg">
+</audio>
+
+<script src="{{ url_for('static', filename='js/surprise.js') }}"></script>
+
+</body>
+</html>
